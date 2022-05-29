@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<link rel="stylesheet" href="./assets/css/css/all.css" />
+		<link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+		<title>Dashboard</title>
+	</head>
+	<body>
+		<section class="sidebar">
+			<div class="container">
+				<a href="#"
+					><h1 class="logo">Zeye<span>Corp</span></h1></a
+				>
+				<a href="#" class="add"
+					>Add new user<i class="fa-solid fa-user-plus"></i
+				></a>
+				<div class="menu">
+					<a href="table.html" class="menu-item"
+						><i class="fa-solid fa-table-columns"></i>Table</a
+					>
+					<a href="dashboard.html" class="menu-item menu-active"
+						><i class="fa-solid fa-chart-pie"></i>Dashboard</a
+					>
+					<a href="#" class="menu-item"
+						><i class="fa-solid fa-clipboard"></i>History</a
+					>
+					<a href="#" class="menu-item setting"
+						><i class="fa-solid fa-gear"></i>Settings</a
+					>
+				</div>
+			</div>
+		</section>
+		<section class="nav">
+			<div class="container">
+				<div class="search-box">
+					<i class="fa-solid fa-magnifying-glass"></i>
+					<input type="text" name="search" placeholder="Search.." />
+				</div>
+				<div class="nav-right">
+					<i class="fa-solid fa-bell"></i>
+					<a href="#"
+						><img class="profile" src="./assets/img/profile.jpg" alt="profile"
+					/></a>
+					<p class="text-sec">
+						Galib Jaman<i class="fa-solid fa-angle-down" id="down"></i>
+					</p>
+				</div>
+				<a href="#" class="logout" id="logout"
+					><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a
+				>
+			</div>
+		</section>
+		<section class="main_content">
+			<div class="container">
+				<div class="info_box">
+					<div class="info_single">
+						<div class="info-icon"><i class="fa-solid fa-user-group"></i></div>
+						<div class="info_text">
+							<h1 class="number">2,612</h1>
+							<p>Active users</p>
+						</div>
+					</div>
+					<div class="info_single info2">
+						<div class="info-icon">
+							<i class="fa-solid fa-apple-whole"></i>
+						</div>
+						<div class="info_text">
+							<h1 class="number">$256,12</h1>
+							<p>Total investments</p>
+						</div>
+					</div>
+					<div class="info_single info3">
+						<div class="info-icon"><i class="fa-solid fa-leaf"></i></div>
+						<div class="info_text">
+							<h1 class="number">1,251,230</h1>
+							<p>Trees planted</p>
+						</div>
+					</div>
+					<div class="info_single info4">
+						<div class="info-icon">
+							<i class="fa-solid fa-handshake-angle"></i>
+						</div>
+						<div class="info_text">
+							<h1 class="number">$362,612</h1>
+							<p>Donated</p>
+						</div>
+					</div>
+				</div>
+				<div class="graphs">
+					<div class="stats" id="stats">
+						<h1>Total number of users signed in</h1>
+						<canvas id="myChart"></canvas>
+					</div>
+					<div class="stats2" id="stats2">
+						<h1>Total number of users signed in</h1>
+						<canvas id="myChart2"></canvas>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="./assets/js/chart.min.js"></script>
+		<script src="./assets/js/script.js"></script>
+	</body>
+</html>
