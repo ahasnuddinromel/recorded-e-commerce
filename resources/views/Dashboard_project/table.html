@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<link rel="stylesheet" href="./assets/css/css/all.css" />
+		<link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+		<title>Dashboard</title>
+	</head>
+
+	<!-- ==========Sidebar Starts======== -->
+
+	<body>
+		<section class="sidebar">
+			<div class="container">
+				<a href="#"
+					><h1 class="logo">Zeye<span>Corp</span></h1></a
+				>
+				<a href="#" class="add"
+					>Add new user<i class="fa-solid fa-user-plus"></i
+				></a>
+				<div class="menu">
+					<a href="#" class="menu-item menu-active"
+						><i class="fa-solid fa-table-columns"></i>User</a
+					>
+					<a href="dashboard.html" class="menu-item"
+						><i class="fa-solid fa-chart-pie"></i>Dashboard</a
+					>
+					<a href="#" class="menu-item"
+						><i class="fa-solid fa-clipboard"></i>History</a
+					>
+					<a href="#" class="menu-item setting"
+						><i class="fa-solid fa-gear"></i>Settings</a
+					>
+				</div>
+			</div>
+		</section>
+
+		<!-- ==========Sidebar Ends======== -->
+
+		<!-- ==========Navigation Starts======== -->
+
+		<section class="nav">
+			<div class="container">
+				<div class="search-box">
+					<i class="fa-solid fa-magnifying-glass"></i>
+					<input type="text" name="search" placeholder="Search.." />
+				</div>
+				<div class="nav-right">
+					<i class="fa-solid fa-bell"></i>
+					<a href="#"
+						><img class="profile" src="./assets/img/profile.jpg" alt="profile"
+					/></a>
+					<p class="text-sec">
+						Galib Jaman<i class="fa-solid fa-angle-down" id="down"></i>
+					</p>
+				</div>
+				<a href="#" class="logout" id="logout"
+					><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a
+				>
+			</div>
+		</section>
+
+		<!-- ==========Navigation Ends======== -->
+
+		<!-- ==========Main Content Starts======== -->
+
+		<section class="main_content">
+			<div class="container">
+				<div class="info_box">
+					<div class="info_single">
+						<div class="info-icon"><i class="fa-solid fa-user-group"></i></div>
+						<div class="info_text">
+							<h1 class="number">2,612</h1>
+							<p>Active users</p>
+						</div>
+					</div>
+					<div class="info_single info2">
+						<div class="info-icon">
+							<i class="fa-solid fa-apple-whole"></i>
+						</div>
+						<div class="info_text">
+							<h1 class="number">$256,12</h1>
+							<p>Total investments</p>
+						</div>
+					</div>
+					<div class="info_single info3">
+						<div class="info-icon"><i class="fa-solid fa-leaf"></i></div>
+						<div class="info_text">
+							<h1 class="number">1,251,230</h1>
+							<p>Trees planted</p>
+						</div>
+					</div>
+					<div class="info_single info4">
+						<div class="info-icon">
+							<i class="fa-solid fa-handshake-angle"></i>
+						</div>
+						<div class="info_text">
+							<h1 class="number">$362,612</h1>
+							<p>Donated</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- ==========Form Starts======== -->
+				<form action="#">
+					<h1 class="form_heading">This is the form heading</h1>
+					<div class="form_section">
+						<h1 class="form_title">First Section</h1>
+						<div class="input_group">
+							<div class="input_single">
+								<p class="input_title">Input title</p>
+								<input
+									name="name"
+									type="text"
+									class="input"
+									placeholder="Placeholder here"
+								/>
+							</div>
+							<div class="input_single">
+								<p class="input_title">Input title</p>
+								<input
+									name="name"
+									type="text"
+									class="input"
+									placeholder="Placeholder here"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="form_section">
+						<div class="input_group">
+							<div class="input_single long">
+								<p class="input_title">Input title</p>
+								<input
+									name="name"
+									type="text"
+									class="input"
+									placeholder="Placeholder here"
+								/>
+							</div>
+							<div class="input_single small">
+								<label for="cars" class="input_title">Choose an option</label>
+								<select
+									class="input select"
+									id="cars"
+									name="cars"
+									placeholder="Choose a car"
+								>
+									<option>Select an option</option>
+									<option value="option 1">option 2</option>
+									<option value="option 2">option 2</option>
+									<option value="option 3">option 3</option>
+									<option value="option 4">option 4</option>
+									<option value="option 5">option 5</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="form_section">
+						<div class="input_group">
+							<div class="input_single small file">
+								<label for="photo" class="input_title" id="photo_label"
+									><i class="fa-solid fa-file-arrow-up"></i>Upload a file</label
+								>
+								<input name="photo" type="file" class="input" id="photo" />
+							</div>
+							<div class="input_single long">
+								<p class="input_title">Input title</p>
+								<input
+									name="name"
+									type="text"
+									class="input"
+									placeholder="Placeholder here"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="form_section">
+						<h1 class="form_title">Second Section</h1>
+						<div class="input_group">
+							<div class="input_single">
+								<p class="input_title">Input title</p>
+								<input
+									name="name"
+									type="date"
+									class="input date"
+									placeholder="Placeholder here"
+								/>
+							</div>
+							<div class="input_single">
+								<label for="cars" class="input_title">Choose an option</label>
+								<select
+									class="input select"
+									id="cars"
+									name="cars"
+									placeholder="Choose a car"
+								>
+									<option>Select an option</option>
+									<option value="option 1">option 2</option>
+									<option value="option 2">option 2</option>
+									<option value="option 3">option 3</option>
+									<option value="option 4">option 4</option>
+									<option value="option 5">option 5</option>
+								</select>
+							</div>
+							<div class="input_single input_radio">
+								<p class="input_title">Input title</p>
+								<div class="dataset">
+									<div>
+										<input
+											type="radio"
+											id="radio"
+											name="drone"
+											value="radio"
+											checked
+										/>
+										<label for="option 1">option 1</label>
+									</div>
+
+									<div>
+										<input
+											type="radio"
+											id="option 2"
+											name="drone"
+											value="option 2"
+										/>
+										<label for="option 2">option 2</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form_section">
+						<div class="input_group">
+							<div class="input_single checkbox">
+								<input name="name" type="checkbox" class="input" for="select" />
+								<label for="input" class="input_title"
+									>Agree with the terms and conditions</label
+								>
+							</div>
+						</div>
+					</div>
+					<input type="Submit" value="Submit" class="submit" />
+				</form>
+				<!-- ==========Form Ends======== -->
+
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col">ID</th>
+							<th scope="col">Name</th>
+							<th scope="col">E-mail</th>
+							<th scope="col">Phone</th>
+							<th scope="col">Photo</th>
+							<th scope="col">Status</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td scope="row">1</td>
+							<td>Galib Jaman</td>
+							<td>gj.emon35@gmail.com</td>
+							<td>+8801 785 215</td>
+							<td><img src="./assets/img/profile.jpg" alt="img" /></td>
+							<td><p class="user_inactive">Inactive</p></td>
+						</tr>
+						<tr>
+							<td scope="row">1</td>
+							<td>Galib Jaman</td>
+							<td>gj.emon35@gmail.com</td>
+							<td>+8801 785 215</td>
+							<td><img src="./assets/img/profile.jpg" alt="img" /></td>
+							<td><p class="user_active">Active</p></td>
+						</tr>
+						<tr>
+							<td scope="row">1</td>
+							<td>Galib Jaman</td>
+							<td>gj.emon35@gmail.com</td>
+							<td>+8801 785 215</td>
+							<td><img src="./assets/img/profile.jpg" alt="img" /></td>
+							<td><p class="user_inactive">Inactive</p></td>
+						</tr>
+						<tr>
+							<td scope="row">1</td>
+							<td>Galib Jaman</td>
+							<td>gj.emon35@gmail.com</td>
+							<td>+8801 785 215</td>
+							<td><img src="./assets/img/profile.jpg" alt="img" /></td>
+							<td><p class="user_active">Active</p></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+		<!-- ==========Main Content Ends======== -->
+		<script>
+			const photo = document.querySelector("#photo");
+			const photo_label = document.querySelector("#photo_label");
+			let file_name = photo.value;
+			file_name.addEventListener.change(function () {
+				photo_label.innerHTML =
+					"<i class='fa-solid fa-file-arrow-up'></i>".file_name;
+			});
+		</script>
+		<script src="./assets/js/chart.min.js"></script>
+		<script src="./assets/js/script.js"></script>
+	</body>
+</html>

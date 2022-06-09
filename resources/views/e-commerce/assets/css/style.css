@@ -1,0 +1,1512 @@
+/* ============= GOOGLE FONTS =========== */
+@font-face {
+    font-family: Inter-Black;
+    src: url('../fonts/static/Inter-Black.ttf');
+}
+@font-face {
+    font-family: Inter-Bold;
+    src: url('../fonts/static/Inter-Bold.ttf');
+}
+@font-face {
+    font-family: Inter-ExtraBold;
+    src: url('../fonts/static/Inter-ExtraBold.ttf');
+}
+@font-face {
+    font-family: Inter-ExtraLight;
+    src: url('../fonts/static/Inter-ExtraLight.ttf');
+}
+@font-face {
+    font-family: Inter-Light;
+    src: url('../fonts/static/Inter-Light.ttf');
+}
+@font-face {
+    font-family: Inter-Medium;
+    src: url('../fonts/static/Inter-Medium.ttf');
+}
+@font-face {
+    font-family: Inter-Regular;
+    src: url('../fonts/static/Inter-Regular.ttf');
+}
+@font-face {
+    font-family: Inter-SemiBold;
+    src: url('../fonts/static/Inter-SemiBold.ttf');
+}
+@font-face {
+    font-family: Inter-Thin;
+    src: url('../fonts/static/Inter-Thin.ttf');
+}
+/* ====== Css Reseting ====== */
+:root{
+    --red: #d43811;
+    --yellow: #ffc000;
+    --red-900: #ff4500;
+    --text-black-900: #302e4d;
+    --text-black-700: #504e70;
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #fdf9ff;
+    --bg-black-50: #e8dfec;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--bg-white-100);
+    font-family: Inter-Regular;
+    background-color: #ffffff;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+
+/* =============Custom Css =========== */
+
+.padding-top{
+    padding-top: 2.5rem;
+}
+.padd-25{
+    padding-bottom: 2.5rem;
+}
+/* ============= HEADER TOP START =========== */
+header{
+    width: 93%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    color: var(--text-black-700);
+    padding: 1.7rem 0;
+}
+.header-top-right ul{
+    display: flex;
+}
+.header-top-right ul li{
+    padding: 0 1rem;
+}
+.header-top-right ul li a{
+    color: var(--text-black-700);
+    font-size: 1.3rem;
+    transition: all 0.2s;
+}
+.header-top-right ul li .a{
+    font-size: 1rem;
+    padding: 0 0.4rem;
+}
+.header-top-right ul li a:hover{
+    color: var(--yellow);
+}
+/* ============= HEADER TOP END =========== */
+
+
+/* ============= HEADER MID START =========== */
+.mid-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ------fst---- */
+.logo{
+    display: flex;
+    align-items: center;
+}
+/* -----2nd----- */
+.search_bar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#bars_options{
+    position: absolute;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgb(165, 154, 154);
+    top: 4.5rem;
+    left: 0;
+    z-index: 9999;
+    display: none;
+}
+#bars_options ul li{
+    padding: 0.3rem 0;
+    display: block;
+    margin: 1rem 0;
+    border-bottom: 0.001px solid rgba(128, 128, 128, 0.274);
+}
+#bars_options ul li:last-child{
+    border-bottom: none;
+}
+#bars_options ul li a{
+    padding: 0 2rem;
+    font-size: 1.5rem;
+    color: var(--text-black-900);
+}
+#bars_options ul li a:hover{
+    color: var(--red-900)
+}
+
+
+
+.bar{
+    margin-right: 7rem;
+    font-size: 2.3rem;
+    color: var(--text-black-700);
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+}
+
+.search_bar form{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.form_input{
+    position: relative;
+    width: 45rem;
+    height: 4rem;
+}
+
+.form-controll{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 2rem;
+    color: var(--text-black-700);
+    font-size: 1.4rem;
+}
+.m-src_btn{
+    position: absolute;
+    right: 0;
+    top: 1.4rem;
+}
+.m-src_btn a{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #333e48;
+    padding: 1.3rem 3.3rem;
+}
+/* ----3rd---- */
+.connect_us{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.c_left,.c_mid,.c_right,.sign{
+    display: flex;
+    align-items: center;
+}
+.c_left,.c_mid,.c_right{
+    margin-right: 2rem;
+    text-align: center;
+}
+.call p{
+    color: var(--text-black-700);
+}
+.c_left .call_i{
+    color: var(--text-black-900);
+    font-size: 2.3rem;
+    margin-right: 1rem;
+}
+.call p:last-child{
+    color: var(--red-900);
+    font-weight: bold;
+}
+
+.c_mid .shopping_i{
+    color: var(--text-black-900);
+    font-size: 2.3rem;
+    margin-right: 0.8rem;
+}
+.c_mid span{
+    background-color: var(--red-900);
+    color: #ffffff;
+    padding: 0.1rem 0.7rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+.c_right .heart_i{
+    color: var(--text-black-700);
+    font-size: 2.5rem;
+}
+.c_right{
+    position: relative;
+}
+.c_right span{
+    background-color: var(--red-900);
+    top: -0.2rem;
+    right: -1rem;
+    position: absolute;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 0.01rem 0.5rem;
+}
+.sign .user_i{
+    color: var(--text-black-700);
+    margin-right: 1rem;
+    font-size: 2.5rem;
+}
+.sign a{
+    color: var(--text-black-900);
+    font-weight: bold;
+    display: block;
+}
+/* ============= HEADER MID END =========== */
+
+
+
+
+/* ============= NAVIGATION START =========== */
+nav{
+    background-color: var(--yellow);
+    margin-top: 2.3rem;
+    display: flex;
+    justify-content: center;
+    height: 4.7rem;
+    margin-bottom: 2.2rem;
+}
+nav ul{
+    width: 93%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+}
+nav ul li{
+    padding: 0 2.7rem 0 0;
+}
+nav ul li a{
+    letter-spacing: -0.08rem;
+    font-size: 1.7rem;
+    color: var(--text-black-900);
+    transition: all 0.2s ease-in-out;
+}
+nav ul li a .b{
+    font-size: 1.5rem;
+    padding: 0 0.6rem 0 0;
+}
+nav ul li a .bb{
+    font-size: 1.2rem;
+    padding: 0 0 0 0.6rem;
+}
+nav ul li a:hover{
+    color: var(--red);
+}
+/* ============= NAVIGATION END =========== */
+
+
+
+/* ============= BANNER START HERE =========== */
+.banner{
+    width: 100%;
+}
+.row{
+    display: flex;
+}
+
+.ban{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.ban-text{
+    position: absolute;
+    z-index: 999;
+    top: 5rem;
+    left: 18rem;
+}
+.ban-text h4{
+    color: rgb(21, 162, 214);
+    font-size: 1.7rem;
+}
+.ban-text h2{
+    font-size: 4rem;
+    font-weight: lighter;
+    padding-bottom: 3rem;
+}
+.ban-text a{
+    background-color: var(--red-900);
+    color: var(--bg-black-100);
+    font-size: 1.7rem;
+    padding: 1.2rem 2.2rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+}
+.ban-text a:hover{
+    background-color: var(--yellow);
+}
+/* ============= BANNER ENDS HERE =========== */
+
+
+
+/* ============= CUSTOMERS SUGGESTIONS START =========== */
+section{
+    width: 93%;
+    margin: auto;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 0.001px solid rgba(128, 128, 128, 0.274);
+    border-radius: 1rem;
+}
+.op-items{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    border-right: 0.001px solid rgba(128, 128, 128, 0.274);
+    padding: 1rem 1rem;
+}
+.op-items:last-child{
+    border: none;
+}
+.op-icon{
+    padding: 1rem 1rem;
+}
+.op-text{
+    padding: 1rem 1rem;
+}
+.op-icon .c{
+    font-size: 3.3rem;
+    color: var(--yellow);
+}
+.op-text h6{
+    font-size: 1.4rem;
+    color: var(--text-black-900);
+}
+.op-text p{
+    font-size: 1.4rem;
+    color: var(--text-black-900);
+}
+/* ============= CUSTOMERS SUGGESTIONS END =========== */
+
+
+/* ============= NEW SEASON BANNER START =========== */
+.min-div{
+    width: 100%;
+    display: flex;
+}
+.min-banner{
+    margin-right: 2.5rem;
+    height: 16rem;
+    position: relative;
+}
+.min-banner:last-child{
+    margin: 0;
+}
+.min-banner img{
+    width: 100%;
+    height: 100%;
+}
+.layout{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: beige;
+    transition: all 0.3s;
+}
+.layout:hover{
+    opacity: 0.5;
+}
+
+.layout-border{
+    position: absolute;
+    border-radius: 2px;
+    width: 93%;
+    height: 93%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 1px solid #ffffff;
+    opacity: 0;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.layout-border:hover{
+    opacity: 1;
+}
+.min-banner-text{
+    position: absolute;
+    top: 4rem;
+    left: 2rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+.min-banner-text h3{
+    font-size: 2.7rem;
+    font-family: Inter-Bold;
+    margin-bottom: 0.8rem;
+}
+.min-banner-text p{
+    font-size: 2.4rem;
+}
+/* ============= NEW SEASON BANNER ENDS =========== */
+
+
+
+
+/* ============= TODAY FLASH SALE START =========== */
+.flash-sale-header{
+    display: flex;
+    align-items: center;
+    padding-bottom: 2rem;
+    border-bottom: 0.001px solid rgba(128, 128, 128, 0.274);
+
+}
+.flash-sale-header h4{
+    font-size: 2.2rem;
+}
+.flash-sale-header p{
+    margin-left: 3rem;
+    font-size: 1.8rem;
+    background-color: var(--red-900);
+    color: #ffffff;
+    padding: 0.8rem 1.7rem;
+    border-radius: 0.8rem;
+}
+.flash-sale-main{
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.flash_sale_products{
+    width: 17%;
+    cursor: pointer;
+    padding: 2.5rem;
+    transition: all 0.3s ease-in-out;
+    border: 0.001px solid rgba(228, 205, 205, 0.274);
+}
+.flash_sale_products:hover{
+    background-color: rgba(128, 128, 128, 0.068);
+}
+
+.flash_sale_products img{
+    width: 100%;
+}
+.fs-text{
+    font-size: 1.5rem;
+    padding-left: 1.7rem;
+}
+.fs-text a{
+    display: block;
+    font-weight: bolder;
+    padding-bottom: 0.6rem;
+    color: rgba(4, 4, 178, 0.822);
+}
+.fs-text span{
+    color: var(--red-900);
+    font-weight: 600;
+}
+
+.line{
+    position: relative;
+    margin-top: 0.7rem;
+    margin-bottom: 0.8rem;
+    width: 95%;
+    height: 0.9rem;
+    border-radius: 0.5rem;
+    background-color: rgba(128, 128, 128, 0.609);
+}
+.filed{
+    width: 47%;
+    height: 0.9rem;
+    background-color: var(--yellow);
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 0.5rem;
+}
+/* ============= TODAY FLASH SALE END =========== */
+
+
+
+
+
+
+/* ============= POPULAR CATEGORIES THIS WEEK START =========== */
+.p_C_heading h4{
+    font-size: 2.2rem;
+    color: var(--text-black-900);
+    padding-bottom: 2rem;
+}
+.p_cate{
+    display: flex;
+    justify-content: space-between;
+}
+.categories_slider{
+    width: 27%;
+}
+.categories_slider img{
+    width: 100%;
+    height: 100%;
+}
+.cat_img{
+    width: 100%;
+    background-color: #302e4d;
+}
+.categories_products_div{
+    width: 71%;
+    display: flex;
+    flex-flow: nowrap;
+    border: 0.001px solid rgba(128, 128, 128, 0.274);
+    border-radius: 1rem;
+}
+.cat-column{
+    border-right: 0.001px solid rgba(128, 128, 128, 0.274);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.8rem;
+}
+.cat-column:last-child{
+    border: none;
+}
+.row-border{
+    border-bottom: 0.001px solid rgba(128, 128, 128, 0.274);
+    padding-bottom: 1rem;
+}
+
+
+.cat-column div img{
+    width: 100%;
+}
+.col-text{
+    width: 53%;
+}
+.sp{
+    font-family: Inter-Bold;
+    color: var(--text-black-900);
+}
+.col-text a{
+    margin-top: 1.5rem;
+    margin-left: 1.6rem;
+    display: block;
+    font-size: 1.5rem;
+    color: var(--text-black-700)
+}
+.ss{
+    padding-left: 2rem;
+}
+.ss a{
+    font-size: 1.5rem;
+    display: block;
+    color: rgba(4, 4, 178, 0.822);
+    font-weight: 600;
+    padding-bottom: 0.8rem;
+}
+.ss span{
+    font-size: 1.5rem;
+    color: var(--red-900);
+    font-weight: 600;
+}
+.reviews{
+    padding-top: 0.5rem;
+}
+.reviews .fa-star{
+    color: var(--yellow);
+}
+.hover-img{
+    overflow: hidden;
+}
+.hover-img>img{
+    transition: all 0.4s ease-in;
+    overflow: hidden;
+}
+.hover-img:hover>img{
+    overflow: hidden;
+    transform: scale(1.1);
+    background-color: grey;
+}
+
+
+
+/* ============= POPULAR CATEGORIES THIS WEEK ENDS =========== */
+
+
+
+/* ============= MID BANNER START =========== */
+.mid-banner{
+    display: flex;
+    justify-content: space-between;
+}
+.mid-banner-left{
+    width: 49%;
+    height: 20rem;
+    cursor: pointer;
+    position: relative;
+}
+.mid-banner-left img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.mid-banner-right{
+    width: 49%;
+    height: 20rem;
+    cursor: pointer;
+    position: relative;
+}
+.mid-banner-right img{
+    width: 100%;
+    height: 100%;
+}
+
+.border_mid{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    border: 1px solid #ffffff;
+}
+/* ============= MID BANNER START END =========== */
+
+
+
+
+
+/* ============= DAILY BEST SELLING START =========== */
+.daily_selling_heading{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.001px solid rgba(128, 128, 128, 0.274);
+    padding-bottom: 1.8rem;
+}
+.daily_s_title h4{
+    font-size: 2.2rem;
+    color: var(--text-black-900);
+}
+.daily_selling_buttons a{
+    margin-left: 1.6rem;
+    font-size: 1.5rem;
+    color: var(--text-black-900);
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+}
+.daily_selling_buttons a:first-child{
+    background-color: var(--yellow);
+}
+.daily_selling_buttons a:focus{
+    background-color: var(--yellow);
+}
+/* ----mixin--- */
+.daily_products{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-start
+}
+.product_img{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.p-img{
+    width: 40%;
+}
+.product_img{
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: rgba(128, 128, 128, 0.062);
+    border-bottom: 0.01px solid rgb(231, 226, 226);
+}
+.product_img:hover{
+    box-shadow: 0.5px 0.5px 2px rgb(163, 148, 148);
+}
+.product_img img{
+    width: 100%;
+}
+.pd-text{
+    width: 60%;
+}
+.pd-text a{
+    font-size: 1.5rem;
+    display: block;
+    color: rgba(4, 4, 178, 0.822);
+    font-weight: 600;
+    padding-bottom: 0.8rem;
+}
+
+/* ============= DAILY BEST SELLING END =========== */
+
+
+/* ============= OFFER BANNER SECTION START =========== */
+
+/* ============= OFFER BANNER SECTION END =========== */
+.offer-banner{
+    width: 100%;
+    height: 18rem;
+    padding-bottom: 2.5rem;
+    position: relative;
+}
+.offer-banner img{
+    width: 100%;
+    height: 100%;
+}
+.devide_banner{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.offer_ban_text{
+    /* background-color: red; */
+    width: 35%;
+    position: absolute;
+    top: 4rem;
+    left: 13rem;
+    right: 0;
+    bottom: 5rem;
+    margin: auto;
+    text-align: center;
+}
+.offer_ban_text h3{
+    font-size: 4rem;
+    color: var(--text-black-900);
+}
+.offer_ban_text h4{
+    font-size: 2.7rem;
+    font-weight: normal;
+    color: var(--text-black-700);
+}
+
+
+.d-left{
+    width: 70%;
+    position: relative;
+}
+.d-left>img{
+    width: 100%;
+    height: 100%;
+}
+
+.devided_ban_text{
+    width: 50%;
+    top: 2rem;
+    left: 2.5rem;
+    bottom: 3rem;
+    position: absolute;
+}
+.devided_ban_text h4{
+    font-size: 3rem;
+    padding: 0.7rem 0;
+    color: var(--text-black-900);
+}
+.devided_ban_text p{
+    font-size: 2rem;
+    padding-bottom: 2.8rem;
+    color: var(--text-black-700);
+}
+.d-right{
+    width: 28%;
+    position: relative;
+}
+.d_right_text{
+    position: absolute;
+    width: 60%;
+    top: 2rem;
+    left: 2rem;
+    bottom: 2rem;
+}
+.d_right_text h4{
+    font-size: 2.7rem;
+    color: var(--text-black-900);
+}
+.d_right_text h3{
+    font-size: 2.6rem;
+    font-weight: lighter;
+    color: var(--text-black-700);
+    padding-bottom: 2rem;
+}
+.d_right_text p{
+    font-size: 1.7rem;
+    padding-top: -1.7rem;
+    padding-bottom: 2rem;
+}
+.d_right_text span{
+    color: var(--red);
+    font-weight: 600;
+}
+.d_right_text a{
+    font-size: 1.6rem;
+    background-color: var(--yellow);
+    color: var(--text-black-900);
+    font-weight: bold;
+    padding: 0.8rem 1.3rem;
+    border-radius: 0.3rem;
+}
+.d-right>img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* ============= BLOG SECTION START =========== */
+.blog_section{
+    padding: 5rem 0;
+    width: 100%;
+    background-color: var(--bg-black-900);
+}
+.blog_title{
+    width: 93%;
+    margin: auto;
+}
+.blog_title h3{
+    padding-bottom: 2rem;
+    font-size: 2.2rem;
+    color: var(--text-black-900);
+}
+.blog_div{
+    display: flex;
+    justify-content: space-between;
+    width: 93%;
+    margin: auto;
+    overflow: hidden;
+}
+.blog{
+    cursor: pointer;
+    width: 23%;
+    background-color: var(--bg-black-100);
+    padding-bottom: 3rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow:  0 0 2px rgb(0 0 0 / 30%);
+}
+.blog_img{
+    padding: 1rem;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.blog_img:hover{
+    transform: scale(1.3);
+}
+.blog img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.blog_body{
+    padding-left: 2.5rem;
+}
+.blog_body p{
+    font-size: 1.5rem;
+    color: #6fa600;
+}
+.blog_body h4{
+    color: var(--text-black-900);
+    font-size: 1.8rem;
+    padding: 2rem 0;
+}
+.blog_body small{
+    color: var(--text-black-700);
+    font-size: 1.2rem;
+    word-spacing: 0.3rem;
+}
+/* ============= BLOG SECTION END =========== */
+
+
+
+
+/* ============= BRANDS LOGOS START =========== */
+.brands{
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 0;
+}
+/* ============= BRANDS LOGOS ENDS =========== */
+
+
+
+
+/* ============= SIGN UP TO NEWSLETTER START =========== */
+.newsletter{
+    width: 100%;
+    background-color: var(--yellow);
+}
+.newsletter_main{
+    width: 93%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 0;
+}
+.newsletter_left h4{
+    font-size: 2.2rem;
+    font-family: Inter-SemiBold;
+    color: var(--text-black-900);
+    padding: 0.5rem 0;
+}
+.newsletter_left p{
+    padding: 0.5rem 0;
+    font-size: 1.4rem;
+    color: var(--text-black-900);
+}
+/* right> form  */
+.form-style{
+    position: relative;
+    background-color: red;
+    width: 45rem;
+    height: 4.5rem;
+    right: 14rem;
+}
+.form-control{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0 2rem;
+    color: var(--text-black-700);
+    font-size: 1.4rem;
+}
+form{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.btn-sub{
+    position: absolute;
+    right: 0;
+}
+.btn-sub a{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #333e48;
+    padding: 1.4rem 3.3rem;
+}
+/* ============= SIGN UP TO NEWSLETTER START END =========== */
+
+
+
+
+
+/* ============= FOOTER START HERE =========== */
+footer{
+    width: 100%; 
+    margin-top: 2rem;
+}
+.footer-links{
+    width: 93%;
+    padding: 3.7rem 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_all{
+    padding-right: 0.5rem;
+}
+.footer_all h5{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.footer_all ul li{
+    margin-bottom: 1.7rem;
+}
+.footer_all ul li a{
+    font-size: 1.5rem;
+    color: rgb(106, 105, 105);
+    transition: all 0.4s;
+}
+.footer_all ul li a:hover{
+    color: var(--yellow);
+}
+
+.footer_img{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-img-right div{
+    padding-bottom: 0.7rem;
+}
+.social_links{
+    display: flex;
+    margin: 3rem 0;
+}
+.social_links .f{
+    font-size: 1.5rem;
+    color: var(--text-black-700);
+    margin-right: 2rem;
+    transition: all 0.3s;
+}
+.social_links .f:hover{
+    cursor: pointer;
+    bottom: 1rem;
+    color: rgba(255, 0, 0, 0.668);
+}
+.Contact_Us{
+    color: rgb(106, 105, 105);
+    font-size: 1.4rem;
+}
+.Contact_Us h5{
+    color: var(--text-black-900);
+}
+.Contact_Us p{
+    margin: 0.8rem 0;
+}
+.number{
+    color: var(--red-900);
+    font-weight: bolder;
+    font-size: 2.3rem;
+}
+.Download_App p{
+    font-size: 1.5rem;
+    color: rgb(106, 105, 105);
+    margin-bottom: 2rem;
+}
+.map{
+    width: 100%;
+    height: 50%;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+/* footer-bottom */
+.footer-bottom{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1.7rem 0;
+    background-color: var(--bg-black-900);
+}
+.footer_bottom_text{
+    width: 93%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    color: var(--text-black-700);
+}
+.footer_bottom_right{
+    display: flex;
+    align-items: center;
+}
+.footer_bottom_right p{
+    padding-right: 2.7rem;
+}
+/* ============= FOOTER ENDS HERE =========== */
+
+
+
+
+/* ============================================= */
+/* =============    Single Product   =========== */
+/* ============================================= */
+.m_p_button{
+    cursor: pointer;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+.product-img{
+    position: relative;
+}
+.owl-nav{
+    font-size: 3.5rem;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    color: var(--text-black-700);
+}
+.owl-prev{
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(128, 128, 128, .3) !important;
+    border-radius: 50%;
+    padding: 1rem 2rem;
+}
+.owl-next{
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(128, 128, 128, .3) !important;
+    border-radius: 50%;
+    padding: 1rem 2rem;
+}
+.owl-next span, .owl-prev span{
+    padding-bottom: 0.4rem;
+}
+
+.product-img:hover> .owl-nav{
+   opacity: 1;
+}
+
+.product-top-heading{
+    display: flex;
+    align-items: center;
+}
+.product-top-heading a{
+    font-size: 1.6rem;
+    color: var(--text-black-700);
+    background-color: rgb(128, 128, 128, .2);
+    margin-right: 1.7rem;
+    padding: 0.9rem 1rem;
+    border-radius: 0.2rem;
+}
+.p_r{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-black-700);
+    margin-right: 1rem;
+}
+.product-main-heading{
+    padding-top: 2rem;
+}
+.product-main-heading h3{
+    font-size: 2.7rem;
+    font-weight: normal;
+    font-family: Inter-Medium;
+    color: var(--text-black-900);
+}
+.product-top-heading p{
+    font-size: 1.5rem;
+    color: var(--text-black-700);
+}
+.product-reviews{
+    display: flex;
+    align-items: center;
+    padding-top: 0.8rem;
+    padding-bottom: 2rem;
+}
+.p_r_s{
+    display: flex;
+    font-size: 1.35rem;
+    color: var(--text-black-700);
+}
+.p_r_s p{
+    padding: 0 1.2rem;
+    color: var(--text-black-900);
+}
+.p_r_s p span{
+    padding: 0 1rem;
+    color: #6fa600;
+}
+.r_b{
+    border-right: 0.001px solid rgba(128, 128, 128, 0.274);
+    padding: 0 0.8rem;
+}
+.product-main-content{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.001px solid rgba(128, 128, 128, 0.274);
+    padding-bottom: 5rem;
+}
+
+.product-img{
+    width: 40%;
+    margin-left: 5rem;
+}
+.product-info{
+    width: 50%;
+    margin-left: 4rem;
+    padding-right: 6rem;
+}
+.product-img img{
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+
+.product-price span{
+   font-size: 2.6rem; 
+   font-weight: 600;
+   color: var(--red);
+   margin-right: 2rem;
+}
+.product-price del{
+    font-size: 2rem;
+    color: var(--text-black-700);
+    font-weight: 600;
+}
+.product-overview{
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+}
+
+.product-overview ol li{
+    list-style-type: circle;
+    color: var(--text-black-900);
+    margin-bottom: 1rem;
+}
+.product-overview ol li a{
+    font-size: 1.6rem;
+    color: var(--text-black-700);
+}
+
+.m_p_button{
+    display: inline-block;
+    border: 0.001px solid rgba(128, 128, 128, 0.274);
+    font-size: 1.8rem;
+    padding: 0.9rem 0;
+    cursor: pointer;
+    margin-top: 2rem;
+    font-weight: bolder;
+    margin-left: 0.5rem;
+    margin-bottom: -0.05rem;
+}
+.minus{
+   padding-left: 1rem; 
+}
+.num{
+    padding: 0 2rem;
+}
+.plus{
+    padding-right: 1rem; 
+ }
+.cart{
+    width: 25rem;
+}
+.cart .c_btn{
+    display: block;
+    background-color: var(--yellow);
+    margin: 1rem 0;
+    text-align: center;
+    padding: 1.2rem 0;
+    font-size: 1.6rem;
+    color: var(--text-black-900);
+    font-weight: 600;
+    border-radius: 0.3rem;
+}
+.bag{
+    font-weight: normal;
+    padding-right: 1rem;
+    color: var(--text-black-700);
+}
+
+.payment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+    color: var(--text-black-900);
+    font-size: 1.7rem;
+    padding: 1rem 2rem;
+    border-radius: 0.3rem;
+}
+.payment img{
+    width: 7rem;
+    padding-right: 0.7rem;
+}
+.cart{
+    margin-top: 2rem;
+}
+.cart p{
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--text-black-700);
+}
+.product_addto_links{
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+}
+.product_addto_links a{
+    color: var(--text-black-700);
+    margin-right: 2rem;
+    font-size: 1.4rem;
+}
+.add_link_i{
+    padding-right: 1rem;
+    color: var(--text-black-700);
+}
+.sku_cat_div{
+    padding: 2rem 0;
+    font-size: 1.4rem;
+    border-bottom: 0.001px solid rgba(128, 128, 128, 0.274);
+    border-top: 0.001px solid rgba(128, 128, 128, 0.274);
+}
+.sku_cat_div p{
+    padding: 0.2rem 0;
+    color: var(--text-black-900);
+}
+.sku_cat_div span{
+    margin-right: 1rem;
+    color: var(--text-black-700);
+}
+.sku_cat_div a{
+    transition: 0.3s;
+    color: var(--text-black-900);
+}
+.sku_cat_div a:hover{
+    color: var(--yellow);
+}
+
+.product_share_links{
+    display: flex;
+    padding-top: 2rem;
+}
+.product_share_links p{
+    font-size: 1.4rem;
+    margin-right: 4.7rem;
+}
+
+.hover_s{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-right: 3rem;
+}
+.hover_after{
+    position: absolute;
+    top: -2.4rem;
+    left: -1.7rem;
+    opacity: 0;
+    transition: 0.4s all;
+}
+.hover_s a{
+    color: var(--text-black-900);
+    font-size: 1.6rem;
+}
+.icon_name{
+    color: var(--bg-black-100);
+    background-color: var(--text-black-900);
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
+    z-index: 999;
+}
+.f_square{
+    position: relative;
+}
+.square{
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--text-black-900);
+    left: 1.6rem;
+    z-index: 9;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+
+
+.hover_s:hover> .hover_after{
+    opacity: 1;
+    top: -4rem;
+}
+.hover_s .go:hover{
+    color: var(--red-900);
+}
+.hover_s .pr:hover{
+    color: crimson;
+}
+.hover_s .tw:hover{
+    color: #1da1f2  
+}
+.hover_s .fa:hover{
+    color: #3b5998;
+}
+
+
+/*========== RELATED PRODUCTS START ========*/
+.related_p_heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.related_p_heading h4{
+    font-size: 2.3rem;
+    color: var(--text-black-900);
+}
+.related_p_heading p{
+    font-size: 1.2rem;
+    color: var(--text-black-900);
+}
+.related_main_div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    border: 0.001px solid rgba(128, 128, 128, 0.274);
+    border-radius: 0.5rem;
+}
+.r_product{
+    width: 25%;
+    border-right: 0.001px solid rgba(128, 128, 128, 0.274);
+    cursor: pointer;
+    overflow: hidden;
+    padding-bottom: 2rem;
+}
+.r_product:last-child{
+    border-right: none;
+}
+.r_img{
+    padding: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+.ab_span{
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    z-index: 999;
+    background-color: #ff4500;
+    color: #fdf9ff;
+    font-size: 1.1rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.4rem;
+}
+.r_img>img{
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+}
+.r_img:hover> .se{
+    transform: scale(1.3);
+}
+.r_text{
+    padding-left: 2rem;
+}
+.r_text a{
+    display: block;
+    font-size: 1.4rem;
+    color: #0d52ad;
+    font-weight: 600;
+    padding-bottom: 0.8rem;
+    transition: 0.3s all;
+}
+.r_text a:hover{
+    color: var(--yellow);
+}
+.r_text span{
+    font-weight: 600;
+    color: var(--red);
+    font-size: 1.5rem;
+}
+
+
+/*========== RELATED PRODUCTS ENDS =========*/

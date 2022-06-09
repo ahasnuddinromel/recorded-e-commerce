@@ -52,7 +52,7 @@
 
 				<button type="submit">Sign in</button>
 			</form>
-			<span class="register">Don't have an account yet? <a href="#">Register!</a></span>
+			<span class="register">Don't have an account yet? <a href="{{route('register')}} ">Register!</a></span>
 		</div>
 	</div>
 </body>

@@ -34,17 +34,15 @@ form {
 .ip {
 	margin-top: 30px;
 	text-align: left;
-	
 }
 .it {
 	color: black;
 	font-size: 15px;
 	font-weight: 500;
 	opacity: 0.8;
-	display: block;
 }
 input {
-	width: 100%;
+	width: 90%;
 	height: 38px;
 	border: 0;
 	outline: 0;
@@ -96,4 +94,7 @@ button:hover {
 }
 .register a:hover {
 	color: #0e8054;
+}
+.fpas {
+	margin-top: 30px;
 }
